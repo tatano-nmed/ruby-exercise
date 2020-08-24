@@ -5,7 +5,7 @@ puts "aaaa", "Ruby."
 
 puts Math.sin(4)  #関数
 
-x = 10
+x = 40
 y = 20
 z = 30
 area = (x*y + y*z + z*x) * 2
