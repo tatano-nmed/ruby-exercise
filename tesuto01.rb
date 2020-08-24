@@ -7,7 +7,7 @@ puts Math.sin(4)  #関数
 
 x = 40
 y = 20
-z = 30
+z = 60
 area = (x*y + y*z + z*x) * 2
 puts "表面積=#{area}"
 
