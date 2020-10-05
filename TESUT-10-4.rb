@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-#—áŠO‚ÌŒãˆ—
+#ä¾‹å¤–ã®å¾Œå‡¦ç†
 def copy(form, to)
  src = Flie.open(from)
  begin
@@ -8,17 +8,17 @@ def copy(form, to)
   data = src.read
   dst.write(data)
   dst.close
- ensure               #OPENƒGƒ‰[‚Å‚àCLOSE‚ðs‚¤
+ ensure               #OPENã‚¨ãƒ©ãƒ¼ã§ã‚‚CLOSEã‚’è¡Œã†
   src.close
  end
 end
 
-#—áŠO‚ð”­¶
+#ä¾‹å¤–ã‚’ç™ºç”Ÿï¼ˆ10.10ï¼‰
 begin
  begin
-  raise "Error1"
+  raise "Error1"    #æœ€åˆã®ä¾‹å¤–
  rescue
-  raise "Error2"
+  raise "Error2"    #ï¼’ç•ªç›®ã®ä¾‹å¤–
  end
 
 rescue => e
