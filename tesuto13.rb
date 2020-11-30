@@ -6,6 +6,30 @@ require "test/unit"    #この記述をすることでTest::Unit::TestCaseが実
 
 class TestSample < Test::Unit::TestCase  #Test::Unit::TestCaseを継承したTestSampleクラスを定義
 
+#配列から要素を加える
+#unshift 先頭に要素を加える
+ def test_arys1
+   a = [1, 2, 3, 4, 5]
+   assert_equal [0, 1, 2, 3, 4, 5],a.unshift(0)
+ end
+#push(item) , a << item  末尾に要素を加える
+ def test_arys2
+   a = [1, 2, 3, 4, 5]
+   assert_equal [1, 2, 3, 4, 5, 6],a.push(6)
+ end
+#concat(b) , a + b  末尾に要素を加える
+ def test_arys3
+   a = [1, 2, 3, 4, 5]
+   assert_equal [1, 2, 3, 4, 5, 6, 7],a.concat([6,7])
+ end
+#a[n]=item 指定された部分の要素をitemに置き換える
+ def test_arys4
+   a = [1, 2, 3, 4, 5]
+   a[2..4] = 0
+   assert_equal [1, 2, 0],a
+ end
+
+
 #配列から要素を取り除く
 #compact,compact! nilを取り除く
  def test_ary1
